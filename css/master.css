@@ -1,0 +1,91 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+#logo {
+    color: #fff;
+}
+h1, h2, h3, h4, #bar a, #logo {
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+.width {
+    width: 100%;
+    box-sizing: border-box;
+}
+.height {
+    height: 100%;
+    box-sizing: border-box;
+}
+.halfX {
+    height: 50%;
+}
+.halfY {
+    width: 50%;
+}
+.tier {
+    height: 100%;
+    box-sizing: border-box;
+}
+.tile {
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+}
+#topSkip {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 50%;
+    background: #ff0000;
+    display: none;
+}
+#top {
+    background: #0000ff;
+}
+#me {
+    width: 30%;
+    background: #ff0000;
+}
+#myInfo {
+    width: 70%;
+}
+#infoTop {
+    background: #000;
+}
+#infoBottom {
+    background: #fff;
+}
+/* CSS for nav */
+#nav {
+    background: #000;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    display: none;
+}
+#bar li {
+    display: inline;
+    margin: 0px 30px;
+}
+#bar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}

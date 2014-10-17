@@ -1,16 +1,10 @@
-var express = require('express');
-var request = require('request');
-var app = express();
-var router = express.Router();
+var express = require('express'),
+    request = require('request'),
+    forever = require('forever')
 
-var port = process.env.PORT || 8080;
 
-app.route('/test')
-    .get(function(req, res){
-        console.log('hit');
-    });
+var options = {
+    max: 3
+};
 
-app.use('/api', router);
-
-app.listen(port);
-console.log('Magic happens on port ' + port);
+forever.start('api.js', options);
