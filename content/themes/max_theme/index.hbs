@@ -3,7 +3,6 @@
 <head>
     <title>Max Baldwin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic,400italic,500italic|Montserrat' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/master.css">
 </head>
 <body>
@@ -43,11 +42,32 @@
         <div class="clear"></div>
     </div>
     <div id="bottom" class="height">
-
+        <div id="filter" class="left">
+            <div id="search">
+                <input type="text" value="filter" name="blogSearch" id="blogSearch"/>
+            </div>
+            <ul id="blogFilter">
+                <li>Most Recent</li>
+                <li>Top 10</li>
+                <li>Javascript</li>
+                <li>HTML</li>
+            </ul>
+        </div>
+        <div id="templateContainer" class="right">
+            <h2>Recent Posts</h2>
+            {{#foreach posts}}
+            <a href="{{url}}"><h2>{{{title}}}</h2></a>
+            <span>{{{published_at}}}</span>
+            <p class="blogText">{{content characters=140}}</p>
+            <a href="{{url}}">Full Article -></a>
+            {{/foreach}}
+        </div>
+        <div class="clear"></div>
     </div>
 </div>
 </body>
 <script type="text/javascript" src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript" src="js/events.js"></script>
 </html>

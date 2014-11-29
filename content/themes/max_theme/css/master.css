@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300italic,400italic,600italic,400,600,300);
 * {
     padding: 0px;
     margin: 0px;
@@ -9,8 +10,13 @@
 h1, h2, h3, h4, #bar a, #logo {
     font-family: 'Montserrat', sans-serif;
 }
-p {
-    font-family: 'Ubuntu', sans-serif;
+p, span, a, li, input {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+input {
+    padding: 5px 10px;
+    border-radius: 3px;
 }
 .left {
     float: left;
@@ -47,14 +53,6 @@ p {
 body, html {
     height: 100%;
 }
-#topSkip {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    top: 50%;
-    background: #ff0000;
-    display: none;
-}
 #top {
     background: #0000ff;
 }
@@ -73,7 +71,7 @@ body, html {
 }
 /* CSS for nav */
 #nav {
-    background: #000;
+    background: #868689;
     padding: 10px 40px;
     position: fixed;
     top: 0;
@@ -88,4 +86,16 @@ body, html {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+}
+/* Bottom CSS */
+#bottom {
+    background: #3C3E43;
+    color: #fff;
+    padding: 30px;
+}
+#filter {
+    width: 30%;
+}
+#templateContainer {
+    width: 70%;
 }
