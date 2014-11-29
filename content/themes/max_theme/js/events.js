@@ -4,8 +4,13 @@ $('.tile').click(myApp.events.tileClick);
 
 $(document).ready(function(){
     var timeStamp = $('#templateContainer span'),
-        postText = $('#templateContainer .blogText');
+        postText = $('#templateContainer .blogText').next();
     myApp.format.publishDate(timeStamp);
     myApp.format.content(postText);
-    console.log(postText);
+    myApp.init();
 });
+
+// $(document).on('scroll', function(self) {
+//     console.log('scroll');
+//     myApp.scrolling.scroll(self);
+// });

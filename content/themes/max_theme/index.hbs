@@ -17,7 +17,7 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
-    <div id="top" class="height">
+    <div id="top" class="height focused">
         <div id="me" class="left tile">
             <h1>My Name</h1>
         </div>
@@ -41,10 +41,17 @@
         </div>
         <div class="clear"></div>
     </div>
-    <div id="bottom" class="height">
-        <div id="filter" class="left">
+    <div id="about" class="height tier">
+        <h2>I am Max</h2>
+        <p>Here is a paragraph about me</p>
+    </div>
+    <div id="skills" class="height tier">
+        <h2>I got skills!</h2>
+    </div>
+    <div id="blog" class="height tier">
+        <div id="filter" class="left height">
             <div id="search">
-                <input type="text" value="filter" name="blogSearch" id="blogSearch"/>
+                <input type="text" placeholder="filter" name="blogSearch" id="blogSearch"/>
             </div>
             <ul id="blogFilter">
                 <li>Most Recent</li>
@@ -54,15 +61,27 @@
             </ul>
         </div>
         <div id="templateContainer" class="right">
-            <h2>Recent Posts</h2>
-            {{#foreach posts}}
-            <a href="{{url}}"><h2>{{{title}}}</h2></a>
-            <span>{{{published_at}}}</span>
-            <p class="blogText">{{content characters=140}}</p>
-            <a href="{{url}}">Full Article -></a>
-            {{/foreach}}
+            <div id="posts">
+                <h3>Recent Posts</h3>
+                {{#foreach posts}}
+                <a href="{{url}}"><h2>{{{title}}}</h2></a>
+                <span>{{{published_at}}}</span>
+                <p class="blogText">{{content characters=140}}</p>
+                <a href="{{url}}">Full Article</a>
+                {{/foreach}}
+            </div>
         </div>
         <div class="clear"></div>
+    </div>
+    <div id="contact" class="height tier">
+        <h2>Say hi!</h2>
+        <form id="contactMe">
+            <input type="text" name="name" id="contactName" placeholder="name"/>
+            <input type="text" name="email" id="contactEmail" placeholder="email@email.com"/>
+            <textarea name="message" id="contactmessage" placeholder="140 Character message"></textarea>
+            <input type="text" name="botValidation" id="botValidation" placeHolder="2 + 2 = ?"/>
+            <input type="submit" name="sumbit" id="contactSumbit" placeholder="send"/>
+        </form>
     </div>
 </div>
 </body>

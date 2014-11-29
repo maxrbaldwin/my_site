@@ -18,6 +18,9 @@ input {
     padding: 5px 10px;
     border-radius: 3px;
 }
+a {
+    text-decoration: none;
+}
 .left {
     float: left;
 }
@@ -42,8 +45,7 @@ input {
     width: 50%;
 }
 .tier {
-    height: 100%;
-    box-sizing: border-box;
+    padding: 80px 0px;
 }
 .tile {
     padding: 20px;
@@ -69,6 +71,10 @@ body, html {
 #infoBottom {
     background: #fff;
 }
+/* CSS for tiers */
+#about, #contact {
+    text-align: center;
+}
 /* CSS for nav */
 #nav {
     background: #868689;
@@ -87,15 +93,29 @@ body, html {
     color: #fff;
     font-size: 20px;
 }
-/* Bottom CSS */
-#bottom {
-    background: #3C3E43;
-    color: #fff;
-    padding: 30px;
+/* blog CSS */
+#filter, #templateContainer {
+    box-sizing: border-box;
+    padding: 0px 30px;
 }
 #filter {
     width: 30%;
+    background-color: #3C3E43;
+    color: #fff;
 }
 #templateContainer {
     width: 70%;
+    position: relative;
+}
+#templateContainer h2 {
+    font-size: 30px;
+}
+#posts {
+    position: absolute;
+}
+/* CSS form */
+#contactMe input {
+    display: block;
+    width: 40%;
+    margin: 0px 30%;
 }
