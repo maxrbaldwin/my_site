@@ -10,13 +10,14 @@
 h1, h2, h3, h4, #bar a, #logo {
     font-family: 'Montserrat', sans-serif;
 }
-p, span, a, li, input {
+p, span, a, li, input, textarea {
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
 }
-input {
+input, textarea {
     padding: 5px 10px;
     border-radius: 3px;
+    border: 1px solid #ccc;
 }
 a {
     text-decoration: none;
@@ -83,6 +84,7 @@ body, html {
     top: 0;
     text-align: center;
     display: none;
+    z-index: 1000;
 }
 #bar li {
     display: inline;
@@ -93,10 +95,24 @@ body, html {
     color: #fff;
     font-size: 20px;
 }
+/* About CSS */
+#aboutMe {
+    width: 60%;
+    margin: 0px 20%;
+}
+#aboutMe p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+#myIcon {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px 0px;
+}
 /* blog CSS */
 #filter, #templateContainer {
     box-sizing: border-box;
-    padding: 0px 30px;
+    padding: 30px;
 }
 #filter {
     width: 30%;
@@ -114,8 +130,21 @@ body, html {
     position: absolute;
 }
 /* CSS form */
-#contactMe input {
+#contactMe {
     display: block;
     width: 40%;
     margin: 0px 30%;
+    text-align: left;
+}
+#contactMe input, #contactMe textarea {
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: 100;
+}
+input#contactSubmit {
+    width: 30%;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
