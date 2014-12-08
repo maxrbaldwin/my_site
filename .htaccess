@@ -1,4 +1,0 @@
-PassengerEnabled on
-PassengerAppRoot /home/api
-SetEnv NODE_ENV production
-SetEnv NODE_PATH /usr/lib/node_modules
