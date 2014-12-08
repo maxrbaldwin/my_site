@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Max Baldwin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+</head>
+<body ng-app="mySiteApp">
+<div id="wrapper" class="width height">
+    <div id="nav" class="width">
+        <div id="logo" class="left">M</div>
+        <ul id="bar">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div id="top" class="height focused">
+        <div id="me" class="left tile">
+            <h1>My Name</h1>
+        </div>
+        <div id="myInfo" class="right height">
+            <div id="infoTop" class="halfX">
+                <div id="infoTopLeft" class="left halfY tile">
+                    <h1>Skills</h1>
+                </div>
+                <div id="infoTopRight" class="right halfY tile">
+                    <h1>Blog</h1>
+                </div>
+            </div>
+            <div id="infoBottom" class="width halfX">
+                <div id="infoBottomLeft" class="left halfY tile">
+                    <h1>Projects</h1>
+                </div>
+                <div id="infoBottomRight" class="right halfY tile">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="about" class="height tier">
+        <div id="aboutMe">
+            <div class="title">
+                <h2>Hi, my name is Max...</h2>
+            </div>
+            <img id="myIcon" src="https://avatars0.githubusercontent.com/u/4340261?v=3&s=460"/>
+            <p>... and I am a self taught developer. I have been teaching myself to code since high school and I continued to practice while I studied Journalism in college. Over this time I have worked on many different projects and worked to sharpen my skills.</p>
+            <p>I currently work at Offerpop as a Front End Developer on the Professional Servies team. At Offerpop I work with the world's top brands to develop successful marketing campaigns using the Offerpop apps and additional custom functionality.</p>
+        </div>
+    </div>
+    <div id="skills" class="height tier">
+        <div class="title">
+            <h2>I got skills!</h2>
+        </div>
+    </div>
+    <div id="blog" class="height">
+        <div id="filter" class="left height">
+            <div id="search">
+                <input type="text" placeholder="filter" name="blogSearch" id="blogSearch"/>
+            </div>
+            <ul id="blogFilter">
+                <li>Most Recent</li>
+                <li>Top 10</li>
+                <li>Javascript</li>
+                <li>HTML</li>
+            </ul>
+        </div>
+        <div id="templateContainer" class="right">
+            <div id="posts">
+            <div id="recentPosts" class="posts">
+        <h3>Recent Posts</h3>
+        <div class="posts">
+            <a href="#"><h2>Title</h2></a>
+            <div class="postInfo">
+                <span class="date">Here is the date</span>
+            </div>
+            <p class="blogText">Some content in 140 characters</p>
+            <div class="postInfo">
+                <span><a href="#">Full Article</a></span>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="contact" class="height tier">
+        <h2>Say hi!</h2>
+        <form id="contactMe" ng-controller="formController" ng-submit="eqValidate()">
+            <input type="text" name="name" id="contactName" class="contactField fullField" ng-model="name"/>
+            <input type="text" name="email" id="contactEmail" class="contactField fullField" ng-model="email"/>
+            <textarea name="message" id="contactmessage" class="contactField fullField" ng-model="message"></textarea>
+            <input type="text" name="number1" ng-class="test" class="contactField botValidation" ng-model="number1"/>
+            <input type="text" name="number2" ng-class="test" class="contactField botValidation" ng-model="number2"/>
+            <input type="text" name="answer" ng-class="test" class="contactField botValidation" ng-model="answer">
+            <input type="submit" name="sumbit" id="contactSubmit" class="contactField" />
+        </form>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript" src="js/events.js"></script>
+</html>

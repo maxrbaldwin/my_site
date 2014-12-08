@@ -1,0 +1,4 @@
+ftp.json
+*npm-debug.log
+*node_modules
+server/modules/connect.js
