@@ -36,7 +36,7 @@ module.exports = function(grunt) {
                     authPath: 'ftp.json',
                     authKey: 'theKey'
                 },
-                src: '/site',
+                src: '/site/public',
                 dest: 'public_html/',
                 exclusions: ['']
             },
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
                     authKey: 'theKey'
                 },
                 src: 'site/',
-                dest: 'public_html/sandbox',
+                dest: 'public_html/sandbox/public',
                 exclusions: ['README.md']
             },
             server: {
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
                     authPath: 'ftp.json',
                     authKey: 'theKey'
                 },
-                src: 'server/',
+                src: 'site/',
                 dest: 'api/',
                 exclusions: ['server/package.json', 'server/node_modules']
             }
