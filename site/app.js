@@ -7,10 +7,8 @@ app.use(express.static(__dirname + '/public'));
 
 app.route('/posts')
     .get(function(req, res) {
-        console.log('ran');
-        connect.connect();
+        get.getPosts();
     });
-
 
 var server = app.listen(3000, function () {
     var host = server.address().address;

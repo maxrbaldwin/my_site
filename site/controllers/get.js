@@ -1,6 +1,6 @@
 var mysql = require('mysql'),
-    connect = require('../modules/connect.js');
+    connection = require('../modules/connect.js');
 
 exports.getPosts = function() {
-
+    connection.connect();
 };
