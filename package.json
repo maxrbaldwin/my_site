@@ -1,26 +1,17 @@
 {
-  "name": "offerpopfrontendgruntpackage",
-  "version": "0.1.0",
-  "author": {
-    "name": "Max Baldwin",
-    "email": "maxrbaldwin2328@gmail.com",
-    "url": "https://github.com/maxrbaldwin"
-  },
-  "description": "Grunt dependencies for Offerpop Front End Developeres",
-  "repository": {
-    "type": "Grunt JS",
-    "url": "https://github.com/roblum/Offerpop"
+  "name": "My-Site-Server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
   },
   "dependencies": {
-    "grunt": "~0.4.0",
-    "grunt-contrib-uglify": "~0.1.2",
-    "grunt-contrib-watch": "~0.3.1",
-    "grunt-contrib-cssmin": "0.10.0",
-    "grunt-contrib-jshint": "0.10.0",
-    "grunt-contrib-csslint": "0.2.0",
-    "grunt-ftp-deploy": "0.1.9"
+    "express": "~4.2.0",
+    "request": "2.40.0",
+    "mysql": "2.5.3"
   },
-  "engines": {
-    "node": "0.8.x"
+  "devDependencies": {
+    "nodemon": "*",
+    "forever": "*"
   }
 }
