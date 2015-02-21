@@ -1,26 +1,21 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300italic,400italic,600italic,400,600,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600|Roboto+Slab:400,100,300);
 * {
     padding: 0px;
     margin: 0px;
     border: 0px;
 }
-#logo {
-    color: #fff;
+body {
+    background: #fff;
 }
-h1, h2, h3, h4, #bar a, #logo {
-    font-family: 'Montserrat', sans-serif;
+/* Primary Fonts. Semantic font resets included */
+h1, h2, h3, h4, .ui.button {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
 }
-p, span, a, li, input, textarea {
+/* Secondary fonts. Semantic font resets included */
+p, span, a, li, input, textarea, .ui.form input[type="text"] {
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
-}
-input, textarea {
-    padding: 5px 10px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-}
-a {
-    text-decoration: none;
 }
 .left {
     float: left;
@@ -28,146 +23,44 @@ a {
 .right {
     float: right;
 }
-.clear {
-    clear: both;
+.width, .half-width {
+    box-sizing: border-box;
 }
 .width {
     width: 100%;
-    box-sizing: border-box;
 }
-.height {
-    height: 100%;
+.clear {
+    clear: both;
 }
-.halfX {
-    height: 50%;
-}
-.halfY {
+/* General Styles */
+.tab-con {
     width: 50%;
-}
-.tier {
-    padding: 80px 0px;
-}
-.tile {
-    padding: 20px;
-    height: 100%;
-    box-sizing: border-box;
-}
-body, html {
-    height: 100%;
-}
-#top {
-
-}
-#me {
-    width: 30%;
-    background: #ff0000;
-}
-#myInfo {
-    width: 70%;
-}
-#infoTop {
-
-}
-#infoBottom {
-
-}
-/* CSS for tiers */
-#about, #contact {
+    margin: 0px 25%;
     text-align: center;
 }
-div.title {
-    text-align: center;
-    width: 100%;
-}
-/* CSS for nav */
-#nav {
-    background: #868689;
-    padding: 10px 40px;
-    position: fixed;
-    top: 0;
-    text-align: center;
-    display: none;
-    z-index: 1000;
-}
-#bar li {
-    display: inline;
-    margin: 0px 30px;
-}
-#bar li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-}
-/* About CSS */
-#aboutMe {
-    width: 60%;
-    margin: 0px 20%;
-    font-size: 20px;
-    line-height: 30px;
-}
-#aboutMe p {
+.tab-con .tab-details {
     text-align: left;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 20px;
 }
-#myIcon {
-    width: 10%;
+/* About */
+.my-icon {
+    max-height: 100px;
+    max-width: 100px;
     border-radius: 100%;
-    margin: 20px 0px;
 }
-/* blog CSS */
-#filter, #templateContainer {
-    box-sizing: border-box;
-    padding: 30px;
+/* Skills */
+/* Contact */
+/* Semantic Resets */
+.ui.menu {
+    margin: 0px;
 }
-#filter {
-    width: 30%;
-    background-color: #3C3E43;
-    color: #fff;
+.ui.tabular.menu .active.item {
+    border-radius: 0px;
+    border-top: 0px;
+    box-shadow: none;
 }
-#templateContainer {
-    width: 70%;
-    position: relative;
-}
-#posts {
-    position: absolute;
-}
-.posts {
-    margin: 10px 0px;
-}
-.posts h2 {
-    font-size: 30px;
-}
-.posts .postInfo {
-    margin: 10px 0px;
-}
-/* CSS form */
-#contactMe {
-    display: block;
-    width: 40%;
-    margin: 0px 30%;
-    text-align: left;
+.ui.tabular.menu {
+    background-color: #F8F8F8
 }
 
-#contactMe input.contactField, #contactMe textarea.contactField {
-    margin: 10px 0px;
-    font-size: 15px;
-    font-weight: 100;
-}
-#contactMe input.fullField, #contactMe textarea.fullField {
-    width: 100%;
-    display: block;
-}
-#contactMe input.botValidation {
-    display: inline;
-    width: 28%;
-}
-input#contactSubmit {
-    width: 30%;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    display: block;
-}
-input.invalid {
-    border: 1px solid #ff0000;
-}
