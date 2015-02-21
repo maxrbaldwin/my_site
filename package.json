@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "nodemon": "*",
-    "forever": "*"
+    "forever": "*",
+    "gulp":"*"
   }
 }
