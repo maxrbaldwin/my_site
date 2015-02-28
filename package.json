@@ -8,11 +8,10 @@
   "dependencies": {
     "express": "~4.2.0",
     "request": "2.40.0",
-    "mysql": "2.5.3"
+    "mysql": "2.5.3",
+    "jade": "1.9.2"
   },
   "devDependencies": {
-    "nodemon": "*",
-    "forever": "*",
-    "gulp":"*"
+    "nodemon": "*"
   }
 }
