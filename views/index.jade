@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title= "Max Baldwin"
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" type="text/css" href="css/styles/semantic.css")
+    link(rel="stylesheet" type="text/css" href="css/styles/master.css")
+    link(rel="stylesheet" type="text/css" href="css/components/icon.css")
+
+  body(ng-app="mySiteApp")
+    #wrapper.width.height
+
+      #top.ui.inverted.teal.vertical.segment
+
+      .ui.tabular.menu
+        .item.active(data-tab="about") About
+        .item(data-tab="skills") Skills
+        .item(data-tab="contact") Contact
+
+      .ui.tab.about.active(data-tab="about")
+        .tab-con
+      .ui.tab.skills(data-tab="skills")
+        .tab-con
+      .ui.tab.contact(data-tab="contact")
+        .tab-con
+    script(type="text/javascript", src="js/site.min.js")
+    script(type="text/javascript", src="js/templates.min.js")
