@@ -1,0 +1,125 @@
+doctype html
+html
+  head
+    title= "Max Baldwin"
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" type="text/css" href="css/styles/semantic.css")
+    link(rel="stylesheet" type="text/css" href="css/styles/master.css")
+    link(rel="stylesheet" type="text/css" href="css/components/icon.css")
+
+  body(ng-app="mySiteApp")
+    div#wrapper.width.height
+
+      div#top.ui.inverted.teal.vertical.segment
+
+      div.ui.tabular.menu
+        div.item.active(data-tab="about") About
+        div.item(data-tab="rep") Reputation
+        div.item(data-tab="skills") Skills
+        div.item(data-tab="journal") Journal
+        div.item(data-tab="contact") Contact
+
+      div.ui.tab.about.active(data-tab="about")
+        div.tab-con.about
+          h1 Hi, my name is Max...
+          img.my-icon(src="https://avatars0.githubusercontent.com/u/4340261?v=3&s=460")
+          div.tab-details
+            p And I am a developer at Offerpop, one of the top leading consumer engagement marketing platform
+      div.ui.tab.skills(data-tab="rep")
+        div.tab-con.reputation
+          div.ui.two.column.middle.aligned.relaxed.fitted.stackable.grid
+            div.center.aligned.column
+              h2
+                i.big.github.icon
+              h2 904
+                p Commits this year
+              div.ui.two.column.middle.aligned.stackable.grid
+                div.column.center.aligned
+                  span.number 6
+                  p Longest Streak
+                div.column.center.aligned
+                  span.number 6
+                  p Current Streak
+            div.center.aligned.column
+              h2
+                i.big.stack.exchange.icon
+              h2 632
+                p Reputation
+              div.ui.two.column.middle.aligned.stackable.grid
+                div.column.center.aligned
+                  span.number 3
+                  p Silver
+                div.column.center.aligned
+                  span.number 12
+                  p Bronze
+      div.ui.tab.skills(data-tab="skills")
+        div.tab-con.skills
+          h1 I got skills!!!
+      div.ui.tab.skills(data-tab="journal")
+        div.tab-con.journal
+          h1 Developer Journal
+          div.ui.two.column.grid
+            div.column
+              div.ui.horizontal.segment
+                div.ui.animated.list
+                  div.item.journal-entry
+                    a(href="#")
+                      h3 Dynamic Underscore Templates
+                    p Don't use ajax requests to load your underscore templates dynamically.
+                  div.item.journal-entry
+                    a(href="#")
+                      h3 Compiling vs Require JS
+                    p Both are to ensure that your code loads properly. Which one is better?
+                  div.item.journal-entry
+                    a(href="#")
+                      h3 Compiling vs Require JS
+                    p Both are to ensure that your code loads properly. Which one is better?
+                  div.item.journal-entry
+                    a(href="#")
+                      h3 Compiling vs Require JS
+                    p Both are to ensure that your code loads properly. Which one is better?
+                  div.item.journal-entry
+                    a(href="#")
+                      h3 Compiling vs Require JS
+                    p Both are to ensure that your code loads properly. Which one is better?
+            div.column
+              div.ui.horizontal.segment
+                h3 My Favorite Stack Posts
+                div.ui.animated.bulleted.list
+                  a.item External Templates With Underscore
+                  a.item When to use Requirejs and when to use bundled javascript
+                  a.item How to organize folder structure in node.js?
+                  a.item node.js server and HTTP/2 (2.0) with express.js
+                  a.item Run Template in Template (recursion) within underscore.js
+      div.ui.tab.contact(data-tab="contact")
+        div.tab-con.contact
+          h1 Get in touch...
+          div.contact-icons
+            div.ui.horizontal.list
+              div.item
+                a(href="https://github.com/maxrbaldwin", target="_blank")
+                  i.big.github.icon
+              div.item
+                a(href="http://stackoverflow.com/users/3266303/max-baldwin", target="_blank")
+                  i.big.stack.exchange.icon
+              div.item
+                a(href="https://twitter.com/MaxRBaldwin", target="_blank")
+                  i.big.twitter.icon
+              div.item
+                a(href="https://instagram.com/maxrbaldwin2328/", target="_blank")
+                  i.big.instagram.icon
+          div.ui.form
+            div.two.fields
+              div.ui.field
+                input(type="text", name="first-name", placeholder="First Name")
+              div.ui.field
+                input(type="text" name="last-name" placeholder="Last Name")
+              div.clear
+            div.ui.field
+              input(type="text" name="email" placeholder="yourEmail@email.com")
+            div.ui.field
+              textarea(placeholder="How can I help you?")
+            div.ui.submit.button Submit
+
+    script(type="text/javascript", src="js/site.min.js")
+    script(type="text/javascript", src="js/templates.min.js")

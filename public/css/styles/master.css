@@ -8,7 +8,7 @@ body {
     background: #fff;
 }
 /* Primary Fonts. Semantic font resets included */
-h1, h2, h3, h4, .ui.button {
+h1, h2, h3, h4, .ui.button, span.number {
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
 }
@@ -16,6 +16,9 @@ h1, h2, h3, h4, .ui.button {
 p, span, a, li, input, textarea, .ui.form input[type="text"] {
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
+}
+span.number {
+    font-size: 20px;
 }
 .left {
     float: left;
@@ -34,14 +37,31 @@ p, span, a, li, input, textarea, .ui.form input[type="text"] {
 }
 /* General Styles */
 .tab-con {
-    width: 50%;
-    margin: 0px 25%;
     text-align: center;
 }
 .tab-con .tab-details {
     text-align: left;
     font-size: 18px;
     margin-top: 20px;
+}
+.tab-con.about {
+    width: 50%;
+    margin: 0px 25%;
+}
+.tab-con.reputation {
+    width: 60%;
+    margin: 0px 20%;
+}
+.tab-con.skills {
+
+}
+.tab-con.journal {
+    width: 60%;
+    margin: 0px 20%;
+}
+.tab-con.contact {
+    width: 50%;
+    margin: 0px 25%;
 }
 /* About */
 .my-icon {
@@ -51,6 +71,9 @@ p, span, a, li, input, textarea, .ui.form input[type="text"] {
 }
 /* Skills */
 /* Contact */
+div.contact-icons {
+    margin-bottom: 20px;
+}
 /* Semantic Resets */
 .ui.menu {
     margin: 0px;

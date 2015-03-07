@@ -1,6 +1,13 @@
-var myApp = (function() {
+var app = (function() {
     var semantic_events = {
 
+    };
+    var _score = {
+        load: function(tabs) {
+            $(tabs).each(function(i){
+
+            });
+        }
     };
     var template = {
         get_template: function() {
@@ -12,6 +19,7 @@ var myApp = (function() {
     };
 
     return {
+        _score: score,
         temp: template,
         s_events: semantic_events
     };

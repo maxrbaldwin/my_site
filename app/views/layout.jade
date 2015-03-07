@@ -1,0 +1,15 @@
+extends index
+block form
+    h1 Get in touch...
+    div.ui.form
+        div.two.fields
+            div.ui.field
+                input(type="text", name="first-name", placeholder="First Name")
+            div.ui.field
+                input(type="text" name="last-name" placeholder="Last Name")
+            div.clear
+        div.ui.field
+            input(type="text" name="email" placeholder="yourEmail@email.com")
+        div.ui.field
+            textarea(placeholder="How can I help you?")
+        div.ui.submit.button Submit
