@@ -11,12 +11,8 @@ var index = require('./routes/index');
 // App configs
 app.set('views', './views');
 app.set('view engine', 'jade');
-app.use(express.static('../public'));
+app.use(express.static('./public'));
 
 app.get('/', index.index);
-
-app.get('/post/:id', posts.get_post);
-
-// Here is a test to git hub hook 2
 
 app.listen(5000);
