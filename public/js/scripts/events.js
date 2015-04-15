@@ -3,9 +3,11 @@ var html = {
     menus: '.tabular.menu .item'
 }
 
-$(function() {
-    console.log(app);
-    app.score.load(html.tabs);
+$('div.filters .button, div.scale .measure').click(function(){
+    var class = $(this).data('filter');
+
+    app.skills.filter(class);
 });
+
 //Semantic Code
 $(html.menus).tab();

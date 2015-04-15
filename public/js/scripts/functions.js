@@ -1,26 +1,19 @@
 var app = (function() {
-    var semantic_events = {
 
-    };
-    var _score = {
-        load: function(tabs) {
-            $(tabs).each(function(i){
-
+    var _skills = {
+        filter: function(class) {
+            $('div.skills .ui.progress').each(function(i, value){
+                if($(value).hasClass(class)) {
+                    $(value).fadeIn();
+                } else {
+                    $(value).fadeOut();
+                }
             });
         }
-    };
-    var template = {
-        get_template: function() {
-
-        },
-        load_template: function() {
-
-        }
-    };
+    }
 
     return {
-        _score: score,
-        temp: template,
-        s_events: semantic_events
-    };
+        skills: _skills
+    }
+
 })();
