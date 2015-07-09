@@ -46,6 +46,7 @@ h1 {
 .icon {
     display: inline-block;
     list-style: none;
+    position: relative;
 }
 .icon img {
     width: 30px;
