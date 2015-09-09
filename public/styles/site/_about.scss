@@ -1,0 +1,127 @@
+.block {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.featured {
+
+  img.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .profile {
+    text-align: center;
+    width: 40%;
+    margin: 15% 30% 0px;
+
+    .profile-pic img {
+      border-radius: 100%;
+      max-width: 150px;
+      max-height: 150px;
+      border: 5px solid $light-back;
+    }
+
+    .profile-desc {
+      margin: 20px 0px;
+
+      span {
+        font-size: 20px !important;
+        text-shadow: 1px 1px 1px #000000;
+      }
+    }
+
+    .profile-connect {
+      li {
+        display: inline-block;
+        list-style: none;
+        margin: 0px 5px;
+      }
+      img {
+        width: 30px;
+        height: 30px;
+        text-shadow: 1px 1px 1px #000000;
+      }
+    }
+  }
+}
+
+.about {
+  text-align: center;
+  padding: 40px 0px;
+
+  .about-slide {
+    width: 60%;
+    margin: 0px 20%;
+  }
+
+  .title {
+    margin-bottom: 40px;
+  }
+
+  .body {
+    text-align: left;
+
+    p {
+      font-size: 15px !important;
+      line-height: 25px !important;
+    }
+  }
+}
+
+.skills {
+  background-color: $light-back;
+
+  .skills-slide {
+    width: 60%;
+    margin: 15% 20% 0px;
+  }
+
+  .value {
+    width: 33.3333%;
+    text-align: center;
+  }
+
+  .quote h3 {
+    font-size: 30px !important;
+    font-weight: 300 !important;
+    line-height: 50px !important;
+    font-style: italic;
+  }
+}
+
+.project {
+  .project-slide {
+    width: 60%;
+    margin: 10% 20% 0px;
+  }
+  .title {
+    text-align: center;
+  }
+  .body-left img {
+    border-radius: 25%;
+    width: 100%;
+  }
+  .body-left, .body-right {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 20px;
+  }
+  .body-left {
+    padding-top: 10%;
+  }
+  .body-right {
+    padding-top: 50px;
+
+    p {
+      font-size: 15px !important;
+      line-height: 25px !important;
+    }
+  }
+}
