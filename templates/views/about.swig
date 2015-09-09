@@ -36,7 +36,7 @@
  <div class="skills block">
    <div class="slide">
      <div class="quote">
-       <h3>“Around here, however, we don't look backwards for very long. We keep moving forward, opening up new doors and doing new things, because we're curious...and curiosity keeps leading us down new paths.” -Walt Disney</h3>
+       <h3>“Around here, however, we don't look backwards for very long. We keep moving forward, opening up new doors and doing new things, because we're curious...and curiosity keeps leading us down new paths.”<br><br>-Walt Disney</h3>
      </div>
    </div>
  </div>
