@@ -5024,6 +5024,91 @@ ul, ol {
     width: 80%;
     margin: 0px 10%; }
 
+.block {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; }
+
+.featured img.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5; }
+.featured .profile {
+  text-align: center;
+  width: 40%;
+  margin: 15% 30% 0px; }
+  .featured .profile .profile-pic img {
+    border-radius: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    border: 5px solid #607D8B; }
+  .featured .profile .profile-desc {
+    margin: 20px 0px; }
+    .featured .profile .profile-desc span {
+      font-size: 20px !important;
+      text-shadow: 1px 1px 1px #000000; }
+  .featured .profile .profile-connect li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 5px; }
+  .featured .profile .profile-connect img {
+    width: 30px;
+    height: 30px;
+    text-shadow: 1px 1px 1px #000000; }
+
+.about {
+  text-align: center;
+  padding: 40px 0px; }
+  .about .about-slide {
+    width: 60%;
+    margin: 0px 20%; }
+  .about .title {
+    margin-bottom: 40px; }
+  .about .body {
+    text-align: left; }
+    .about .body p {
+      font-size: 15px !important;
+      line-height: 25px !important; }
+
+.skills {
+  background-color: #607D8B; }
+  .skills .skills-slide {
+    width: 60%;
+    margin: 15% 20% 0px; }
+  .skills .value {
+    width: 33.3333%;
+    text-align: center; }
+  .skills .quote h3 {
+    font-size: 30px !important;
+    font-weight: 300 !important;
+    line-height: 50px !important;
+    font-style: italic; }
+
+.project .project-slide {
+  width: 60%;
+  margin: 10% 20% 0px; }
+.project .title {
+  text-align: center; }
+.project .body-left img {
+  border-radius: 25%;
+  width: 100%; }
+.project .body-left, .project .body-right {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 20px; }
+.project .body-left {
+  padding-top: 10%; }
+.project .body-right {
+  padding-top: 50px; }
+  .project .body-right p {
+    font-size: 15px !important;
+    line-height: 25px !important; }
+
 .category {
   display: inline;
   list-style: none; }
