@@ -7,7 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>{{ title|default("My Site") }}</title>
+		{% block title %}{% endblock %}
+		{% block og-meta %}{% endblock %}
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
 		{# This file provides the default styling for the KeystoneJS Content Editor #}
@@ -56,7 +57,7 @@
 		<div class="footer">
 			<div class="slide-footer">
 				<div class="slide-left left">
-					<p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
+					<p class="small">Powered by <a class="small" href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
 				</div>
 				<div class="slide-right right">
 
