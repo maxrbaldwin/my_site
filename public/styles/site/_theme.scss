@@ -47,6 +47,11 @@ a:hover {
   text-decoration: none;
 }
 
+.fa-mx {
+	font-size: 10px !important;
+	margin: 0px 5px;
+}
+
 @media screen and (max-width:800px) {
 	p, a, b, a, li, strong {
 		font-size: 30px;
@@ -76,6 +81,10 @@ a:hover {
 	}
 	.fa-2x {
 		font-size: 4em !important;
+	}
+	.fa-mx {
+		font-size: 30px !important;
+		margin: 0px 10px;
 	}
 }
 
@@ -140,5 +149,9 @@ a:hover {
 	}
 	.fa-2x {
 		font-size: 2em !important;
+	}
+	.fa-mx {
+		font-size: 20px !important;
+		margin: 0px 5px;
 	}
 }
