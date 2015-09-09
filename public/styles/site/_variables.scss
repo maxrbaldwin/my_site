@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+
+$font-size-base: 14px;
+$light-back: #607D8B;
+$dark-back: #37474F;
+$white: #ECEFF1;
+$green: #76FF03;
+$shadow: #263238;
+$open-sans: 'Open Sans', sans-serif;
+$light: 300;
+$normal: 400;
+$semi-bold: 600;
+$bold: 700;
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
+}

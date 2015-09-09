@@ -1,0 +1,19 @@
+* {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+ul, ol {
+	margin-bottom: 0px;
+}
+
+@import "nav-bar";
+@import "cards";
+@import "post";
+@import "footer";
+
+.category {
+	display: inline;
+	list-style: none;
+}

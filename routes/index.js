@@ -1,9 +1,15 @@
-var express = require('express');
-var router = express.Router();
+var index = require('./views/index');
+var category  = require('./views/category');
+var post = require('./views/post');
+var about = require('./views/about');
 
-/* GET home page. */
-router.get('/', function(req, res) {
-  res.render('index');
-});
+// Setup Route Bindings
+exports = module.exports = function(app) {
 
-module.exports = router;
+	// Views
+	app.get('/', index);
+	app.get('/c/:category', category);
+	app.get('/p/:post', post);
+	app.get('/about', about);
+
+};

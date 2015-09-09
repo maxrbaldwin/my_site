@@ -1,0 +1,31 @@
+.nav-bar {
+  padding: 5px 20px;
+  background: $light-back;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  box-shadow: 0px 3px 5px $shadow;
+  z-index: 9999;
+
+  h1 {
+    margin: 0px;
+  }
+
+  .nav-list {
+    margin: 0px 50px;
+  }
+
+  .nav-options {
+    li {
+      list-style: none;
+      display: inline-block;
+      margin: 5px 20px 0px;
+      font-weight: light;
+
+      a {
+        color: $white !important;
+      }
+    }
+  }
+}
