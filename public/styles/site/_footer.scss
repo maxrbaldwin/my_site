@@ -3,6 +3,12 @@
 
   .slide-footer {
     width: 80%;
-    margin: 0px 10%;
+    margin: 20px 10%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .footer {
+    text-align: center;
   }
 }

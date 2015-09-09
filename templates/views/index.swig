@@ -13,13 +13,12 @@
 					</div>
 					<div class="card-body">
 						<ul class="card-categories">
-							<i class="fa fa-circle-o"></i>
 							{% for category in post.categories %}
 							<li class="category">
 								{% if loop.last %}
-									<a class="small" href="/c/{{ category.key }}">{{ category.name }} </a>
+									<a class="small" href="/c/{{ category.key }}"><i class="fa fa-circle-o fa-mx"></i> {{ category.name }} </a>
 								{% else %}
-									<a class="small" href="/c/{{ category.key }}">{{ category.name }}, </a>
+									<a class="small" href="/c/{{ category.key }}"><i class="fa fa-circle-o fa-mx"></i> {{ category.name }}, </a>
 								{% endif %}
 							</li>
 							{% endfor %}

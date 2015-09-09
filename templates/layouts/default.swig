@@ -56,13 +56,7 @@
 		{# FOOTER #}
 		<div class="footer">
 			<div class="slide-footer">
-				<div class="slide-left left">
-					<p class="small">Powered by <a class="small" href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
-				</div>
-				<div class="slide-right right">
-
-				</div>
-				<div class="clear"></div>
+				<p class="small">Powered by <a class="small" href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
 			</div>
 		</div>
 

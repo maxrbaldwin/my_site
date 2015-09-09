@@ -1,5 +1,5 @@
 .nav-bar {
-  padding: 10px 20px;
+  padding: 5px 20px;
   background: $light-back;
   position: fixed;
   top: 0px;
@@ -21,6 +21,7 @@
       list-style: none;
       display: inline-block;
       margin: 0px 20px;
+      line-height: 30px;
 
       a {
         color: $white;

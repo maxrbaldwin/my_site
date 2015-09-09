@@ -42,11 +42,15 @@ p, a, b, a, li, strong {
   line-height: 18px; }
 
 a {
-  color: #76FF03;
+  color: #80CBC4;
   text-decoration: none; }
 
 a:hover {
   text-decoration: none; }
+
+.fa-mx {
+  font-size: 10px !important;
+  margin: 0px 5px; }
 
 @media screen and (max-width: 800px) {
   p, a, b, a, li, strong {
@@ -69,7 +73,10 @@ a:hover {
     font-size: 30px;
     line-height: 35px; }
   .fa-2x {
-    font-size: 4em !important; } }
+    font-size: 4em !important; }
+  .fa-mx {
+    font-size: 30px !important;
+    margin: 0px 10px; } }
 
 @media screen and (max-width: 600px) {
   p, a, b, a, li, strong {
@@ -115,7 +122,10 @@ a:hover {
     font-size: 20px;
     line-height: 25px; }
   .fa-2x {
-    font-size: 2em !important; } }
+    font-size: 2em !important; }
+  .fa-mx {
+    font-size: 20px !important;
+    margin: 0px 5px; } }
 
 * {
   border: 0px;
@@ -126,8 +136,8 @@ ul, ol {
   margin-bottom: 0px; }
 
 .nav-bar {
-  padding: 10px 20px;
-  background: #607D8B;
+  padding: 5px 20px;
+  background: #263238;
   position: fixed;
   top: 0px;
   right: 0px;
@@ -141,7 +151,8 @@ ul, ol {
   .nav-bar .nav-options li {
     list-style: none;
     display: inline-block;
-    margin: 0px 20px; }
+    margin: 0px 20px;
+    line-height: 30px; }
     .nav-bar .nav-options li a {
       color: #ECEFF1; }
 
@@ -184,7 +195,7 @@ ul, ol {
       width: 100%; }
   .card .card-body {
     padding: 20px 40px;
-    background-color: #607D8B; }
+    background-color: #263238; }
   .card .post-body {
     margin: 10px 0px; }
 
@@ -218,6 +229,8 @@ ul, ol {
   margin-top: 15%; }
   .post .image img {
     width: 100%; }
+  .post header {
+    margin: 20px 0px; }
 
 .post-article p {
   margin-bottom: 20px; }
@@ -234,7 +247,11 @@ ul, ol {
   margin-top: 10%; }
   .footer .slide-footer {
     width: 80%;
-    margin: 0px 10%; }
+    margin: 20px 10%; }
+
+@media screen and (max-width: 800px) {
+  .footer {
+    text-align: center; } }
 
 .block {
   position: relative;
@@ -275,7 +292,7 @@ ul, ol {
     border-radius: 100%;
     max-width: 150px;
     max-height: 150px;
-    border: 5px solid #607D8B; }
+    border: 5px solid #263238; }
   .featured .profile .profile-desc {
     margin: 20px 0px; }
   .featured .profile .profile-connect li {
@@ -295,7 +312,7 @@ ul, ol {
     text-align: left; }
 
 .skills {
-  background-color: #607D8B; }
+  background-color: #263238; }
   .skills .value {
     width: 33.3333%;
     text-align: center; }
