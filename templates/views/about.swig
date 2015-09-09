@@ -2,7 +2,6 @@
 
 {% block content %}
  <div class="featured block">
-   <img src="/images/backgrounds/feet.jpg" class="background"/>
    <div class="profile">
      <div class="profile-pic">
        <img src="/images/profile.jpeg"/>
@@ -21,7 +20,7 @@
    </div>
  </div>
  <div class="about block">
-   <div class="about-slide">
+   <div class="slide">
      <div class="title">
        <h2>My Name is Max...</h2>
      </div>
@@ -35,14 +34,14 @@
    </div>
  </div>
  <div class="skills block">
-   <div class="skills-slide">
+   <div class="slide">
      <div class="quote">
        <h3>“Around here, however, we don't look backwards for very long. We keep moving forward, opening up new doors and doing new things, because we're curious...and curiosity keeps leading us down new paths.” -Walt Disney</h3>
      </div>
    </div>
  </div>
  <div class="project block">
-   <div class="project-slide">
+   <div class="slide">
      <div class="title">
        <h2>What is News Seed?</h2>
      </div>
@@ -62,4 +61,8 @@
      </div>
    </div>
  </div>
+{% endblock %}
+
+{% block title %}
+  <title>Max Baldwin | Web Developer, New York Times</title>
 {% endblock %}
