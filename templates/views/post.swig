@@ -8,7 +8,7 @@
 			{% else %}
 				<div class="post">
 					{% if post.image.exists %}
-						<div class="image-wrap">
+						<div class="image">
 							<img src="{{ post.image.url }}" class="img-responsive">
 						</div>
 					{% endif %}
@@ -22,9 +22,9 @@
 						{% for category in post.categories %}
 						<li class="category">
 							{% if loop.last %}
-								<a href="/c/{{ category.key }}">{{ category.name }} </a>
+								<a class="small" href="/c/{{ category.key }}">{{ category.name }} </a>
 							{% else %}
-								<a href="/c/{{ category.key }}">{{ category.name }}, </a>
+								<a class="small" href="/c/{{ category.key }}">{{ category.name }}, </a>
 							{% endif %}
 						</li>
 						{% endfor %}
@@ -36,4 +36,16 @@
 			{% endif %}
 		</article>
 	</div>
+{% endblock %}
+
+
+{% block title %}
+  <title>{{ post.title }} | Max Baldwin</title>
+{% endblock %}
+
+{% block og-meta %}
+	<meta property="og:title" content="{{ post.title }}" />
+	<meta property="og:type" content="news.publishes" />
+	<meta property="og:url" content="http://maxrbaldwin.com/p/{{ post.slug }}" />
+	<meta property="og:image" content="{{ post.image.url }}" />
 {% endblock %}
