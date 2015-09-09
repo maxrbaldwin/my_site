@@ -17,19 +17,19 @@
 							{% for category in post.categories %}
 							<li class="category">
 								{% if loop.last %}
-									<a href="/c/{{ category.key }}">{{ category.name }} </a>
+									<a class="small" href="/c/{{ category.key }}">{{ category.name }} </a>
 								{% else %}
-									<a href="/c/{{ category.key }}">{{ category.name }}, </a>
+									<a class="small" href="/c/{{ category.key }}">{{ category.name }}, </a>
 								{% endif %}
 							</li>
 							{% endfor %}
 						</ul>
 						<a href="/p/{{ post.slug }}"><h2>{{ post.title }}</h2></a>
-						<div>
-							{{ post.content.brief | safe }}
+						<div class="post-body small">
+								{{ post.content.brief | safe }}
 						</div>
 						<div class="card-date">
-							<i class="fa fa-clock-o"></i> {{ post.publishedDate|date('jS \o\f F') }}
+							<p class="small"><i class="fa fa-clock-o"></i> {{ post.publishedDate|date('jS \o\f F') }}</p>
 						</div>
 					</div>
 				</div>
@@ -40,4 +40,15 @@
 		{% endif %}
 		{% endfor %}
 	</section>
+{% endblock %}
+
+{% block title %}
+  <title>Max Baldwin | Web Developer, New York Times</title>
+{% endblock %}
+
+{% block og-meta %}
+	<meta property="og:title" content="Max Baldwin | Web Developer, New York Times" />
+	<meta property="og:type" content="news.publishes" />
+	<meta property="og:url" content="http://maxrbaldwin.com" />
+	<meta property="og:image" content="{{ post.image.url }}" />
 {% endblock %}
