@@ -1,34 +1,144 @@
 body {
 	background: $dark-back;
 	color: $white;
+	font-size: 100%;
 }
 
 p, span, a, b, strong, h1, h2, h3, h4, h5 {
-	font-family: $open-sans !important;
-  color: $white !important;
+	font-family: $open-sans;
+  color: $white;
 }
 
 h1, h2, h3, h4, h5 {
-	font-weight: $semi-bold !important;
+	font-weight: $semi-bold;
 }
 
 h1 {
 	font-size: 25px;
+	line-height: 30px;
 }
 
 h2 {
   font-size: 20px;
 }
 
-p, span, a, b, strong {
-	font-weight: $light !important;
-  font-size: 12px !important;
-  line-height: 18px !important;
+h3 {
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 50px;
+}
+
+p, a, b, a, li, strong {
+	font-weight: $light;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.small {
+	font-size: 12px;
+	line-height: 18px;
 }
 
 a {
-  color: $green !important;
+  color: $green;
+	text-decoration: none;
 }
 a:hover {
   text-decoration: none;
+}
+
+@media screen and (max-width:800px) {
+	p, a, b, a, li, strong {
+		font-size: 30px;
+		line-height: 45px;
+	}
+	h1 {
+		font-size: 60px;
+    line-height: 70px;
+	}
+	h2 {
+		font-size: 60px;
+		line-height: 70px;
+	}
+	h3 {
+		font-size: 50px;
+    line-height: 70px;
+	}
+	h5 {
+		font-size: 30px;
+	}
+	span {
+		font-size: 40px;
+	}
+	.small {
+		font-size: 30px;
+    line-height: 35px;
+	}
+	.fa-2x {
+		font-size: 4em !important;
+	}
+}
+
+@media screen and (max-width:600px) {
+	p, a, b, a, li, strong {
+		font-size: 25px;
+		line-height: 40px;
+	}
+	h1 {
+		font-size: 50px;
+    line-height: 60px;
+	}
+	h2 {
+		font-size: 60px;
+		line-height: 70px;
+	}
+	h5 {
+		font-size: 25px;
+	}
+	h3 {
+		font-size: 40px;
+    line-height: 60px;
+	}
+	span {
+		font-size: 30px;
+	}
+	.small {
+		font-size: 25px;
+    line-height: 30px;
+	}
+	.fa-2x {
+		font-size: 3.5em !important;
+	}
+}
+
+@media screen and (max-width:400px) {
+	p, a, b, a, li, strong {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	h1 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	h2 {
+		font-size: 35px;
+    line-height: 40px;
+	}
+	h3 {
+		font-size: 25px;
+    line-height: 40px;
+	}
+	h5 {
+		font-size: 25px;
+	}
+	span {
+		font-size: 20px;
+	}
+	.small {
+		font-size: 20px;
+    line-height: 25px;
+	}
+	.fa-2x {
+		font-size: 2em !important;
+	}
 }

@@ -4,16 +4,22 @@
 }
 .post {
   margin-top: 15%;
+
+  .image img {
+    width: 100%;
+  }
 }
 .post-article p {
-  font-size: 15px !important;
-  line-height: 25px !important;
-  span, strong {
-    font-size: 15px !important;
-    line-height: 25px !important;
-  }
+  margin-bottom: 20px;
 }
 
 .card-categories {
   margin: 20px 0px;
+}
+
+@media screen and (max-width:800px) {
+  .post-container {
+    width: 90%;
+    margin: 0px 5%;
+  }
 }
