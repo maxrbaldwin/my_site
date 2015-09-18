@@ -2,6 +2,12 @@
   "name": "my-site",
   "version": "0.0.0",
   "private": true,
+  "ms": {
+    "start": "keystone.js",
+    "options": {
+      "port": 80
+    }
+  },
   "dependencies": {
     "keystone": "^0.3.11",
     "async": "^0.9.0",
