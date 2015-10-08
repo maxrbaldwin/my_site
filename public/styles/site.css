@@ -177,7 +177,8 @@ ul, ol {
 
 .deck {
   width: 80%;
-  margin: 10% auto; }
+  margin: 10% auto;
+  max-width: 1000px; }
 
 .card-row {
   width: 100%; }
@@ -223,7 +224,8 @@ ul, ol {
 
 .post-container {
   width: 60%;
-  margin: 0px 20%; }
+  margin: 0px auto;
+  max-width: 800px; }
 
 .post {
   margin-top: 15%; }
@@ -260,8 +262,9 @@ ul, ol {
 
 .slide {
   width: 60%;
-  margin: 15% 20% 0px;
-  padding: 40px 0px; }
+  margin: 15% auto 0px;
+  padding: 40px 0px;
+  max-width: 800px; }
 
 .featured:before {
   content: ' ';
