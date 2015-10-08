@@ -1,20 +1,31 @@
 var app = (function($){
-  var posts = {
-    switchView: function(path) {
-      this.getOne(path)
-        .then(function(post){
-          console.log(post);
-        })
-        .error(function(err){
-          console.log(err);
-        });
+  var nav = {
+    toggle: function() {
+      var nav = $('.nav-mobile');
+
+      if(nav.hasClass('showing')) {
+        nav.hide().removeClass('showing');
+        return;
+      }
+
+      nav.show().addClass('showing');
+    }
+  };
+
+  var analytics = {
+    postViews: function() {
+      ga('send', 'event', 'post', 'post-view', 'test');
     },
-    getOne: function(path) {
-      return $.ajax(path);
+    categoryView: function() {
+
+    },
+    keystoneClick: function() {
+
     }
   };
 
   return {
-    posts: posts
+    nav: nav,
+    ga: analytics
   };
 })($);
